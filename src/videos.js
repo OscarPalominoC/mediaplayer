@@ -13,6 +13,7 @@ let timeoutId
 const random = () => Math.floor(Math.random() * 13)
 const randomNumber = random()
 const randomVideo = videosArray[randomNumber]
+export { randomVideo }
 
 function showPlayBar() {
     controls.style.opacity = 1
@@ -25,7 +26,7 @@ function hidePlayBar() {
 export const createVideo = () => {
     const video = document.createElement('video')
     const source = document.createElement('source')
-    const video_id = video.dataset.videoId = randomVideo.id
+    video.dataset.videoId = randomVideo.id
 
     source.src = randomVideo.sources
 

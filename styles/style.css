@@ -257,9 +257,42 @@ header nav {
     grid-area: videos_related;
 }
 
+
+/* comments section */
 .comments {
     grid-area: comment;
 }
+.comments .comment  {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.comments .comment figure {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.comments .comment figure img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#comment-details {
+    text-align: left;
+}
+#comment-details #user-info {
+    font-weight: bold;
+}
+#comment-details p {
+    margin: 0 auto 5px;
+}
+
 
 footer {
     grid-area: footer;
