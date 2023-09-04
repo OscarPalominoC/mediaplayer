@@ -5,140 +5,140 @@
       "usuario": "FunkyMonkey",
       "nombre": "John Doe",
       "created_at": "2021-01-15",
-      "avatar": "./mediaplayer/images/avatares/avatar (1).png"
+      "avatar": "./images/avatares/avatar (1).png"
     },
     {
       "id": 2,
       "usuario": "DancingQueen",
       "nombre": "Jane Smith",
       "created_at": "2021-02-20",
-      "avatar": "./mediaplayer/images/avatares/avatar (2).png"
+      "avatar": "./images/avatares/avatar (2).png"
     },
     {
       "id": 3,
       "usuario": "RockStarRob",
       "nombre": "Robert Johnson",
       "created_at": "2021-03-10",
-      "avatar": "./mediaplayer/images/avatares/avatar (3).png"
+      "avatar": "./images/avatares/avatar (3).png"
     },
     {
       "id": 4,
       "usuario": "MusicLoverMary",
       "nombre": "Mary Wilson",
       "created_at": "2021-04-05",
-      "avatar": "./mediaplayer/images/avatares/avatar (4).png"
+      "avatar": "./images/avatares/avatar (4).png"
     },
     {
       "id": 5,
       "usuario": "GuitarHeroDave",
       "nombre": "David Lee",
       "created_at": "2021-05-12",
-      "avatar": "./mediaplayer/images/avatares/avatar (5).png"
+      "avatar": "./images/avatares/avatar (5).png"
     },
     {
       "id": 6,
       "usuario": "DiscoDivaLisa",
       "nombre": "Lisa Brown",
       "created_at": "2021-06-17",
-      "avatar": "./mediaplayer/images/avatares/avatar (6).png"
+      "avatar": "./images/avatares/avatar (6).png"
     },
     {
       "id": 7,
       "usuario": "JazzManMike",
       "nombre": "Michael Davis",
       "created_at": "2021-07-23",
-      "avatar": "./mediaplayer/images/avatares/avatar (7).png"
+      "avatar": "./images/avatares/avatar (7).png"
     },
     {
       "id": 8,
       "usuario": "SalsaSarah",
       "nombre": "Sarah Martinez",
       "created_at": "2021-08-01",
-      "avatar": "./mediaplayer/images/avatares/avatar (8).png"
+      "avatar": "./images/avatares/avatar (8).png"
     },
     {
       "id": 9,
       "usuario": "BluesBilly",
       "nombre": "William White",
       "created_at": "2021-09-08",
-      "avatar": "./mediaplayer/images/avatares/avatar (9).png"
+      "avatar": "./images/avatares/avatar (9).png"
     },
     {
       "id": 10,
       "usuario": "HipHopKaren",
       "nombre": "Karen Harris",
       "created_at": "2021-10-11",
-      "avatar": "./mediaplayer/images/avatares/avatar (10).png"
+      "avatar": "./images/avatares/avatar (10).png"
     },
     {
       "id": 11,
       "usuario": "FunkadelicJames",
       "nombre": "James Taylor",
       "created_at": "2021-11-14",
-      "avatar": "./mediaplayer/images/avatares/avatar (11).png"
+      "avatar": "./images/avatares/avatar (11).png"
     },
     {
       "id": 12,
       "usuario": "ReggaeLinda",
       "nombre": "Linda Wilson",
       "created_at": "2021-12-19",
-      "avatar": "./mediaplayer/images/avatares/avatar (12).png"
+      "avatar": "./images/avatares/avatar (12).png"
     },
     {
       "id": 13,
       "usuario": "TechnoRichard",
       "nombre": "Richard Anderson",
       "created_at": "2022-01-25",
-      "avatar": "./mediaplayer/images/avatares/avatar (13).png"
+      "avatar": "./images/avatares/avatar (13).png"
     },
     {
       "id": 14,
       "usuario": "PopStarPatricia",
       "nombre": "Patricia Miller",
       "created_at": "2022-02-28",
-      "avatar": "./mediaplayer/images/avatares/avatar (14).png"
+      "avatar": "./images/avatares/avatar (14).png"
     },
     {
       "id": 15,
       "usuario": "CountryCharles",
       "nombre": "Charles Brown",
       "created_at": "2022-03-10",
-      "avatar": "./mediaplayer/images/avatares/avatar (15).png"
+      "avatar": "./images/avatares/avatar (15).png"
     },
     {
       "id": 16,
       "usuario": "EDMQueenJennifer",
       "nombre": "Jennifer Clark",
       "created_at": "2022-04-15",
-      "avatar": "./mediaplayer/images/avatares/avatar (16).png"
+      "avatar": "./images/avatares/avatar (16).png"
     },
     {
       "id": 17,
       "usuario": "MetalHeadMatthew",
       "nombre": "Matthew Davis",
       "created_at": "2022-05-20",
-      "avatar": "./mediaplayer/images/avatares/avatar (17).png"
+      "avatar": "./images/avatares/avatar (17).png"
     },
     {
       "id": 18,
       "usuario": "PunkRockSusan",
       "nombre": "Susan Harris",
       "created_at": "2022-06-25",
-      "avatar": "./mediaplayer/images/avatares/avatar (18).png"
+      "avatar": "./images/avatares/avatar (18).png"
     },
     {
       "id": 19,
       "usuario": "RapMasterJoe",
       "nombre": "Joseph Moore",
       "created_at": "2022-07-30",
-      "avatar": "./mediaplayer/images/avatares/avatar (19).png"
+      "avatar": "./images/avatares/avatar (19).png"
     },
     {
       "id": 20,
       "usuario": "SoulfulMargaret",
       "nombre": "Margaret Johnson",
       "created_at": "2022-08-05",
-      "avatar": "./mediaplayer/images/avatares/avatar (20).png"
+      "avatar": "./images/avatares/avatar (20).png"
     }
   ]
 }
