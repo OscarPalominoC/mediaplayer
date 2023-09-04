@@ -2,7 +2,7 @@ var usersArray = []; // Crear un array vacío para almacenar los usuarios
 var commentsArray = []; // Array para almacenar los comentarios
 var videosArray = []; // Array para almacenar los videos
 
-await fetch('../json/users.json')
+await fetch('./json/users.json')
     .then(response => response.json())
     .then(data => {
         data.usuarios.forEach(user => {
@@ -13,7 +13,7 @@ await fetch('../json/users.json')
         console.error('Error al cargar el archivo JSON de usuarios: ', error)
     })
 
-await fetch('../json/comments.json')
+await fetch('./json/comments.json')
   .then(response => response.json())
   .then(data => {
     // Verificar si hay usuarios en el archivo JSON
@@ -25,7 +25,7 @@ await fetch('../json/comments.json')
     console.error('Error al cargar el archivo JSON de comentarios:', error);
   });
 
-await fetch('../json/videos.json')
+await fetch('./json/videos.json')
   .then(response => response.json())
   .then(data => {
     // Verificar si hay usuarios en el archivo JSON
