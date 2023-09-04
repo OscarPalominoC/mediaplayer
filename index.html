@@ -37,9 +37,21 @@
         </nav>
     </header>
 
+    <div class="video">
+        <div class="controls">
+            <button id="playPause">Play</button>
+            <input type="range" id="barraReproduccion" min="0" value="0">
+            <button id="mute">Mute</button>
+            <input type="range" id="volumen" min="0" max="1" step="0.1" value="1">
+            <button id="fullscreen">Fullscreen</button>
+        </div>
+    </div>
+    <div class="video-description">
+        
+    </div>
 
-    <div class="video"></div>
     <div class="videos-related"></div>
+
     <div class="comments"></div>
     <footer></footer>
     <script type="module" src="./src/index.js"></script>

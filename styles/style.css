@@ -7,6 +7,7 @@ body {
     grid-template-rows: auto auto auto auto;
     grid-template-areas:    "header header header" 
                             "video video videos_related" 
+                            "video_desc video_desc videos_related"
                             "comment comment videos_related"
                             "footer footer footer";
     grid-gap: 20px;
@@ -174,9 +175,82 @@ header nav {
     margin-top: 10px;
 }
 
-.videos {
+.video {
     grid-area: video;
     width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.video video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #000;
+}
+
+.video .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.video .controls button, input[type="range"] {
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    outline: none;
+    transition: opacity 0.3s;
+}
+
+.video .controls button:hover, input[type="range"]:hover {
+    opacity: 0.7;
+}
+
+.video .controls input[type="range"] {
+    width: 100px;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #555;
+    border-radius: 3px;
+}
+
+.video .controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#barraReproduccion {
+    width: 70%;
+}   
+
+
+.video-description {
+    grid-area: video_desc;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    padding: 10px;
+}
+.video-description h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.video-description p {
+    margin: 0 0 5px 0;
 }
 
 .videos-related {
