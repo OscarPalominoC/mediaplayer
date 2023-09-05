@@ -35,5 +35,3 @@ containers.forEach(container => {
         video.load()
     })
 })
-
-//containerVideo.addEventListener('click', () => console.log('Holis'))

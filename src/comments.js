@@ -6,7 +6,6 @@ const commentsMountNode = document.querySelector('.comments')
 export const createCommentsNode = (video_id) => {
     const comments = []
     commentsMountNode.innerHTML = ''
-    console.log(typeof(video_id))
     const comments_per_video = commentsArray.filter(
         comment => comment.video_id == video_id)
     comments_per_video.forEach(comment => {
