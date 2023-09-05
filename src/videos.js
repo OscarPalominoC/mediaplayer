@@ -10,10 +10,6 @@ const fullscreenButton = document.getElementById('fullscreen')
 const controls = document.querySelector('.controls')
 
 let timeoutId
-const random = () => Math.floor(Math.random() * 13)
-const randomNumber = random()
-const randomVideo = videosArray[randomNumber]
-export { randomVideo }
 
 function showPlayBar() {
     controls.style.opacity = 1
@@ -23,12 +19,14 @@ function hidePlayBar() {
     controls.style.opacity = 0
 }
 
-export const createVideo = () => {
+export const createVideo = (video_id) => {
+    const newVideo = videosArray.find(video => video.id == video_id)
     const video = document.createElement('video')
+    
     const source = document.createElement('source')
-    video.dataset.videoId = randomVideo.id
+    video.dataset.videoId = newVideo.id
 
-    source.src = randomVideo.sources
+    source.src = newVideo.sources
 
     playPauseButton.addEventListener('click', () => {
         if (video.paused) {
@@ -115,23 +113,25 @@ export const createVideo = () => {
     })
 
     video.appendChild(source)
-    mountNode.insertAdjacentElement('afterBegin' ,video)
+    mountNode.insertAdjacentElement('afterBegin', video)
 }
 
-export const videoDescription = () => {
+export const videoDescription = (video_id) => {
+    const newVideo = videosArray.find(video => video.id == video_id)
     const descriptionMountNode = document.querySelector('.video-description')
+    descriptionMountNode.innerHTML = ''
     const title = document.createElement('h3')
-    title.textContent = randomVideo.title
+    title.textContent = newVideo.title
     const author = document.createElement('p')
     const author_sm = document.createElement('small')
-    author_sm.textContent = randomVideo.author
+    author_sm.textContent = newVideo.author
     author.appendChild(author_sm)
     const uploaded = document.createElement('p')
     const uploaded_sm = document.createElement('small')
-    uploaded_sm.textContent = randomVideo.upload_date
+    uploaded_sm.textContent = newVideo.upload_date
     uploaded.appendChild(uploaded_sm)
     const description = document.createElement('p')
-    description.textContent = randomVideo.description
+    description.textContent = newVideo.description
 
     descriptionMountNode.append(title, author, uploaded, description)
 }

@@ -1,14 +1,14 @@
 import { commentsArray, usersArray } from "./fetch-data.js";
-import { randomVideo } from "./videos.js";
 
-const video_id = randomVideo.id
+
 const commentsMountNode = document.querySelector('.comments')
-const comments_per_video = commentsArray.filter(
-    comment => comment.video_id == video_id)
 
-const comments = []
-
-const createCommentsNode = () => {
+export const createCommentsNode = (video_id) => {
+    const comments = []
+    commentsMountNode.innerHTML = ''
+    console.log(typeof(video_id))
+    const comments_per_video = commentsArray.filter(
+        comment => comment.video_id == video_id)
     comments_per_video.forEach(comment => {
         const user = usersArray.find(users => users.id == comment.user_id)
         const commentario = document.createElement('div')
@@ -16,7 +16,6 @@ const createCommentsNode = () => {
         const figure = document.createElement('figure')
         const img = document.createElement('img')
         img.src = user.avatar
-        console.log(user.avatar)
         figure.appendChild(img)
 
         const comment_details = document.createElement('div')
@@ -41,7 +40,4 @@ const createCommentsNode = () => {
 
     commentsMountNode.append(...comments)
 }
-createCommentsNode()
-export const test = () => {
-    console.log(comments_per_video)
-}
+

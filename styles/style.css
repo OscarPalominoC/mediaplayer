@@ -6,9 +6,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto auto;
     grid-template-areas:    "header header header" 
-                            "video video videos_related" 
-                            "video_desc video_desc videos_related"
-                            "comment comment videos_related"
+                            "video video related_videos" 
+                            "video_desc video_desc related_videos"
+                            "comment comment related_videos"
                             "footer footer footer";
     grid-gap: 20px;
 }
@@ -253,9 +253,40 @@ header nav {
     margin: 0 0 5px 0;
 }
 
-.videos-related {
-    grid-area: videos_related;
+.related-videos {
+    grid-area: related_videos;
+    display: inline-block;
 }
+
+.related-videos .container {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 15px;
+}
+.related-videos .container:hover {
+    cursor: pointer;
+}
+
+#thumbnail {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+    padding: 0;
+}
+#thumbnail img {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+#video-description p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+#author {
+    font-weight: bold;
+}
+
 
 
 /* comments section */
